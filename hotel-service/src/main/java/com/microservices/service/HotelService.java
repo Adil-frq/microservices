@@ -1,4 +1,4 @@
-package com.microservices.service.impl;
+package com.microservices.service;
 
 import com.microservices.dto.request.HotelRequest;
 import com.microservices.dto.response.HotelResponse;
