@@ -38,6 +38,8 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UserResponse> getAllUsers() throws UserException {
         List<User> users = userRepository.findAll();
+        if(users.isEmpty())
+            throw new UserException("NO record found in database");
         return Convertor.entityToDto(users);
     }
 }
