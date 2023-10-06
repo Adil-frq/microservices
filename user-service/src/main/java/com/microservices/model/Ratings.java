@@ -1,4 +1,4 @@
-package com.microservices.dto.request;
+package com.microservices.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,9 +9,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @Builder
-public class UserResponse {
+public class Ratings {
+    private String ratingId;
     private String userId;
-    private String name;
-    private String email;
-    private String about;
+    private String hotelId;
+    private double rating;
+
+    private String feedback;
 }

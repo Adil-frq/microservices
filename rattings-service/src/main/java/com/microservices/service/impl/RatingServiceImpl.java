@@ -44,10 +44,11 @@ public class RatingServiceImpl implements RatingService {
     }
 
     @Override
-    public RatingResponse getRatingByUserId(String userId) throws RatingException {
-        Optional<Rating> rating = ratingRepository.findRatingByUserId(userId);
+    public List<RatingResponse> getRatingByUserId(String userId) throws RatingException {
+        Optional<List<Rating>> rating = ratingRepository.findRatingByUserId(userId);
         rating.orElseThrow(()->new RatingException("Record not found by given hotel id "+userId));
-        return Convertor.entityToDto(rating.get());
+        List<RatingResponse> ratingResponses = Convertor.entityToDto(rating.get());
+        return ratingResponses;
     }
 
     @Override

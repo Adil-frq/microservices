@@ -13,7 +13,7 @@ public interface RatingService {
 
     public RatingResponse getRatingByHotelId(String ratingId) throws RatingException;
 
-    public RatingResponse getRatingByUserId(String ratingId) throws RatingException;
+    public List<RatingResponse> getRatingByUserId(String ratingId) throws RatingException;
 
     public List<RatingResponse> getAllRating() throws RatingException;
 

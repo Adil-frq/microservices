@@ -1,7 +1,7 @@
 package com.microservices.controller;
 
 import com.microservices.dto.request.UserRequest;
-import com.microservices.dto.request.UserResponse;
+import com.microservices.dto.response.UserResponse;
 import com.microservices.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

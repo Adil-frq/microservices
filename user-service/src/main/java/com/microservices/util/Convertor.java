@@ -1,7 +1,7 @@
 package com.microservices.util;
 
 import com.microservices.dto.request.UserRequest;
-import com.microservices.dto.request.UserResponse;
+import com.microservices.dto.response.UserResponse;
 import com.microservices.entity.User;
 
 import java.util.List;
